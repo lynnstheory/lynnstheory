@@ -24,7 +24,7 @@ const App = () => {
   }, []);
 
   return (
-    <div className="App">
+    <div className="App" style={{ overflow: "hidden" }}>
       <Navigation />
       <Header data={landingPageData.Header} />
       <About data={landingPageData.About} />

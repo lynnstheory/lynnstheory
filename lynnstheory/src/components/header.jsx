@@ -8,10 +8,10 @@ export const Header = (props) => {
           <div className="container">
             <div className="row">
               <div className="col-md-8 col-md-offset-2 intro-text">
-                <h1 style={{ color: "black", fontFamily: "cursive" }}>
+                <h2 style={{ color: "black", fontFamily: "cursive" }}>
                   {props.data ? props.data.title : "Loading"}
                   <span></span>
-                </h1>
+                </h2>
                 <p
                   style={{
                     color: "black",
@@ -21,12 +21,14 @@ export const Header = (props) => {
                 >
                   {props.data ? props.data.paragraph : "Loading"}
                 </p>
-                <a
-                  href="#features"
+                <button
+                  onClick={() => {
+                    alert("Boba fett is the best boba");
+                  }}
                   className="btn btn-custom btn-lg page-scroll"
                 >
                   Hi lynn
-                </a>{" "}
+                </button>{" "}
               </div>
             </div>
           </div>

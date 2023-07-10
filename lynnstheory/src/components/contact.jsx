@@ -16,7 +16,7 @@ export const Contact = (props) => {
   const clearState = () => setState({ ...initialState });
 
   const handleSubmit = (e) => {
-    console.log("test");
+    alert(" sorry lyn not much functionality yet");
   };
   return (
     <div>
